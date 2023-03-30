@@ -1,0 +1,30 @@
+.header {
+    height: 80px;
+    background: #e5e9ec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.header h2 {
+    color: brown;
+    text-transform:
+
+
+
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(9, 3, 3);
+    margin-left: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+.header a:hover {
+    background: rgb(219, 119, 83);
+    padding: 5px;
+}

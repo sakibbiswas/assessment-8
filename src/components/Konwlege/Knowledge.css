@@ -1,0 +1,12 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: #fff8f8;
+}
+
+.Knowledge-container {
+    display: grid;
+    grid-template-columns: 3fr;
+    margin: 110px;
+    gap: 45px;
+}

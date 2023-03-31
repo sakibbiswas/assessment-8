@@ -55,3 +55,8 @@ a {
 .title {
     margin-left: 20px;
 }
+
+.title p {
+    color: blue;
+
+}

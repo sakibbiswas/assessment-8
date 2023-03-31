@@ -10,7 +10,7 @@ const Know = (props) => {
     const { Author, img, date, title, mark, person, Time
     } = props.knowledge;
     const handeladdtocart = props.handeladdtocart;
-
+    const timesup = props.timesup;
 
 
     return (
@@ -32,7 +32,8 @@ const Know = (props) => {
             </div>
             <div className='title'>
                 <h2>{title}</h2>
-                <a href='/'>{mark}</a>
+                <p onClick={() => timesup(props.knowledge)}>{mark}</p>
+                <hr />
             </div>
 
         </div>

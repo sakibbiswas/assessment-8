@@ -2,16 +2,17 @@ import React from 'react';
 import Knowledge from '../Konwlege/Knowledge';
 import Selecteditem from '../selected-items/Selecteditem';
 import "./Cart.css"
-const Cart = ({ cart }) => {
+const Cart = ({ cart, times }) => {
     let total = 0;
-    for (let knowledge of cart) {
+    for (let knowledge of times) {
         total = total + knowledge.Time
 
     }
+
     return (
         <div className='cart'>
             <div className='cart-read'>
-                <h3>Spent time on read:{total} </h3>
+                <h3>Spent time on read:{total} min </h3>
                 <h2>Bookmark Blogs:{cart.length}</h2>
             </div>
             <div className="cart-items">

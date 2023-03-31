@@ -7,6 +7,8 @@ import "./Knowledge.css"
 const Knowledge = () => {
     const [Konwleges, setKonwleges] = useState([])
     const [cart, setcart] = useState([])
+    const [times, settimes] = useState([])
+
 
     useEffect(() => {
         fetch('knowledge.json')
@@ -15,6 +17,7 @@ const Knowledge = () => {
     }, [])
 
     const handeladdtocart = (knowledge) => {
+
         if (cart.length < 4) {
             setcart([...cart, knowledge])
 
@@ -23,6 +26,9 @@ const Knowledge = () => {
             alert('fhfdhdfgdf')
         }
 
+    }
+    const timesup = (knowledge) => {
+        settimes([...times, knowledge])
     }
 
     return (
@@ -35,12 +41,17 @@ const Knowledge = () => {
                         key={knowledge.id}
                         knowledge={knowledge}
                         handeladdtocart={handeladdtocart}
+                        timesup={timesup}
+
+
 
                     ></Know>)
                 }
             </div>
             <div className="side-container">
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart}
+                    times={times}
+                ></Cart>
             </div>
 
         </div>

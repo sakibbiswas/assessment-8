@@ -14,3 +14,15 @@
 
 
 }
+
+.qustion {
+    color: black;
+    border: 2px solid teal;
+    background-color: aquamarine;
+    padding: 20px;
+
+}
+
+.big {
+    color: tomato;
+}

@@ -25,7 +25,7 @@ const Know = (props) => {
                 </div>
                 <div className='btn'>
                     <p>{Time} min read </p>
-                    <button onClick={() => handeladdtocart(props.knowledge)}> <FontAwesomeIcon icon={faBookmark} /></button>
+                    <button className='BTN' onClick={() => handeladdtocart(props.knowledge)}> <FontAwesomeIcon className='icon' icon={faBookmark} /></button>
                 </div>
 
 

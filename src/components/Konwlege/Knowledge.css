@@ -1,6 +1,6 @@
 .main-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     background-color: rgb(251, 250, 248);
 
 }
@@ -14,6 +14,8 @@
 
 
 }
+
+
 
 .qustion {
     color: black;

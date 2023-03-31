@@ -29,7 +29,7 @@ const Knowledge = () => {
         }
         else {
             setcart([...cart, knowledge])
-            toast('Ar click dis nah bhai ')
+            toast('Ar click diyen nah bhai ')
         }
 
 

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Know from '../know/Know';
 import "./Knowledge.css"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Knowledge = () => {
@@ -18,13 +20,18 @@ const Knowledge = () => {
 
     const handeladdtocart = (knowledge) => {
 
-        if (cart.length < 4) {
+        // if (cart.length < 1) {
+        // setcart([...cart, knowledge])
+
+        if (cart.length < 1) {
             setcart([...cart, knowledge])
 
         }
         else {
-            alert('fhfdhdfgdf')
+            setcart([...cart, knowledge])
+            toast('Ar click dis nah bhai ')
         }
+
 
     }
     const timesup = (knowledge) => {
@@ -49,6 +56,7 @@ const Knowledge = () => {
                 }
             </div>
             <div className="side-container">
+                < ToastContainer />
                 <Cart cart={cart}
                     times={times}
                 ></Cart>

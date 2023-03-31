@@ -7,6 +7,7 @@ import "./Knowledge.css"
 const Knowledge = () => {
     const [Konwleges, setKonwleges] = useState([])
     const [cart, setcart] = useState([])
+
     useEffect(() => {
         fetch('knowledge.json')
             .then(res => res.json())
@@ -14,8 +15,16 @@ const Knowledge = () => {
     }, [])
 
     const handeladdtocart = (knowledge) => {
-        setcart([...cart, knowledge])
+        if (cart.length < 4) {
+            setcart([...cart, knowledge])
+
+        }
+        else {
+            alert('fhfdhdfgdf')
+        }
+
     }
+
     return (
         <div className='main-container'>
 

@@ -1,5 +1,5 @@
 .cart {
-    background: rgba(255, 153, 0, 0.3);
+    background-color: rgb(179, 179, 179);
     padding: 45px;
     position: sticky;
     top: 0;
@@ -20,13 +20,32 @@
 .cart-items {
     margin-top: 50px;
     padding-right: 23px;
+
 }
 
-.cart-items p {
+.cart-items h2 {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
     letter-spacing: 0.005em;
+    color: black;
+}
+
+.cart-read h2 {
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #e5e5e5;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.cart-read h3 {
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #e5e5e5;
+
 }

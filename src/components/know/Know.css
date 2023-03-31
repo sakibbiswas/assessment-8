@@ -1,9 +1,8 @@
 .know {
     width: 700px;
     height: 700px;
-    border: 2px solid blue;
     border-radius: 10px;
-
+    border: 1px solid blue;
 }
 
 .know h2 {

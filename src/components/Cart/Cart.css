@@ -3,8 +3,18 @@
     padding: 45px;
     position: sticky;
     top: 0;
+    margin-top: 120px;
 
 
+}
+
+.cart h2 {
+    color: rgb(0, 0, 6);
+}
+
+.cart h3 {
+
+    color: blue;
 }
 
 .cart-items {

@@ -1,11 +1,14 @@
 
 import React from 'react';
+
 import "./Know.css"
 
 
 const Know = (props) => {
     const { Author, img, date, title, mark, person, Time
     } = props.knowledge;
+    const handeladdtocart = props.handeladdtocart
+
     return (
         <div className='know'>
             <img src={img} alt="" />
@@ -14,11 +17,11 @@ const Know = (props) => {
                 <img src={person} alt="" />
                 <div>
                     <h3>{Author}</h3>
-                    <p>{date}</p>
+                    <p>{date}(4 days ago)</p>
                 </div>
                 <div className='btn'>
-                    <p>{Time}</p>
-                    <button>Cart</button>
+                    <p>{Time} min read </p>
+                    <button onClick={() => handeladdtocart(props.knowledge)}>Cart</button>
                 </div>
 
 
